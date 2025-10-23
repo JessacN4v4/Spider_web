@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 2 - Estilos CSS | Milo J</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f4a261 0%, #e76f51 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .main-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 60px 40px;
+            max-width: 800px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            color: #e76f51;
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .subtitle {
+            color: #f4a261;
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        .description {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: block;
+            padding: 20px 30px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-inline {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+            color: white;
+        }
+
+        .btn-interna {
+            background: linear-gradient(135deg, #4ecdc4, #44a08d);
+            color: white;
+        }
+
+        .btn-externa {
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #888;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Práctica 2: Estilos CSS</h1>
+        <p class="subtitle">Proyecto sobre Milo J - Artista Argentino</p>
+
+        <div class="description">
+            <p>
+                Práctica de estilos CSS. Este proyecto demuestra tres formas diferentes 
+                de aplicar estilos en HTML: <strong>inline</strong>, <strong>internos</strong> y <strong>externos</strong>.
+            </p>
+        </div>
+
+        <div class="buttons-container">
+            <a href="inline.html" class="btn btn-inline">
+                Ver Estilos INLINE
+                <br><small style="font-size: 0.8em; font-weight: normal;">Estilos aplicados con atributo style=""</small>
+            </a>
+            
+            <a href="interna.html" class="btn btn-interna">
+                Ver Estilos INTERNOS
+                <br><small style="font-size: 0.8em; font-weight: normal;">Estilos en etiqueta &lt;style&gt; dentro del &lt;head&gt;</small>
+            </a>
+            
+            <a href="externa.html" class="btn btn-externa">
+                Ver Estilos EXTERNOS
+                <br><small style="font-size: 0.8em; font-weight: normal;">Estilos en archivo estilos.css enlazado</small>
+            </a>
+        </div>
+
+        <footer>
+            <p>© 2025 - Práctica de Estilos CSS | Milo J</p>
+        </footer>
+    </div>
+</body>
+</html>
